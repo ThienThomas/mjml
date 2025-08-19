@@ -1,0 +1,19 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "mjml --watch src/index.mjml --output src/index.html & live-server --port=3000 --no-browser --watch=src/index.html",
+    "build": "mjml src/index.mjml --output src/index.html",
+    "server": "live-server --host=localhost --port=3001 --open=src",
+    "dev": "concurrently \"yarn start\" \"yarn server\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "mjml": "^4.15.3"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

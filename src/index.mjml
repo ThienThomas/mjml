@@ -1,0 +1,36 @@
+<mjml>
+  <mj-body background-color="#fafbfc">
+    <mj-section background-color="#fff" padding="40px 20px">
+      <mj-column vertical-align="middle" width="100%">
+        <mj-image width="200px" src="cid:logo" />
+        <mj-text align="left" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000" font-weight="700"
+          ><span>Xin chào anh/chị</span><br />
+          <span style="color: #555; font-weight: normal; font-size: 12px">Dear Mr/Ms,</span></mj-text
+        >
+        <mj-text align="left" font-size="18px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000" font-weight="700"><span>{{ name }}</span></mj-text>
+        <mj-text align="justify" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000"
+          ><span>Hệ thống Payroll vừa nhận được yêu cầu đặt lại mật khẩu cho tài khoản của anh/chị <span style="font-weight: bold">({{ username }})</span>. Vui lòng nhấn vào liên kết bên dưới để đặt lại mật khẩu.</span>
+          <span style="color: #555; font-weight: normal; font-size: 12px"
+            ><br />
+            Payroll system has received a request to reset your account <span style="font-weight: bold">({{ username }})</span> password. Please click the button below to proceed</span
+          ></mj-text
+        >
+
+        <mj-button align="center" font-size="18px" background-color="#55C445" border-radius="8px" color="#fff" href="{{ link }}" padding="15px 30px"
+          ><span>ĐẶT LẠI MẬT KHẨU</span><br />
+          <span style="font-size: 12px">RESET PASSWORD</span></mj-button
+        >
+        <!-- <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#555">Or copy and paste the following link into your browser:</mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#555"><a href="{{ link }}">{{ link }}</a></mj-text> -->
+        <mj-text align="center" font-size="18px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000"
+          ><span>Liên kết sẽ hết hạn sau {{ valid_hours }} giờ</span><br />
+          <span style="color: #555; font-weight: normal; font-size: 12px">This link will expire in {{ valid_hours }} hour(s).</span></mj-text
+        >
+        <mj-divider border-color="#ccc" border-width="2px"></mj-divider>
+        <mj-text align="center" font-size="14px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000"><span>Vui lòng bỏ qua email nếu anh/chị không yêu cầu đặt lại mật khẩu<span><br />
+          <span style="color: #555; font-weight: normal; font-size: 12px">If you didn't request a password recovery you can disregard this email.</span></mj-text>
+          
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
